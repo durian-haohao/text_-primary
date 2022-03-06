@@ -1,2 +1,2 @@
-# text_-primary
+# text_primary
 This is a description。
