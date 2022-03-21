@@ -1,0 +1,40 @@
+//常量
+
+//1、字面常量
+#include<stdio.h>
+int main1()
+{
+	3.14;
+	10;
+	'a';
+	"abcd";
+	return 0;
+}	
+//2、const修饰的常变量
+#include<stdio.h>
+int main2()
+{
+	int num = 10;
+	num = 20;
+	printf("num=%d\n",num);
+	return 0;//结果为20
+}
+#include<stdio.h>
+int main3()
+{
+	const int num = 10;//num此时叫做常变量（定值的变量，本质还是变量只是具有了常属性）
+	//输入num=20  显示错误编译（加上const表示num只为10）
+	printf("num=%d\n",num);
+	return 0;
+}
+//3、#define 定义的标识符常量
+#define MAX 1000
+int main()
+{
+	int n = MAX;
+	//MAX = 2000为错误的
+	printf("n=%d\n",n);
+	return 0;
+
+
+//4、枚举常量
